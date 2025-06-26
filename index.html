@@ -1,44 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjan's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Sanjan</h1>
-        <p>Web Developer | Tech Enthusiast | Creator</p>
-    </header>
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Sanjan, a passionate developer with a love for web technologies and building digital experiences.</p>
-    </section>
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Portfolio Website:</strong> This website showcasing my work.</li>
-            <li><strong>Project 2:</strong> Description of your second project here.</li>
-        </ul>
-    </section>
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sanjan@example.com">sanjan@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/yourgithubusername" target="_blank">yourgithubusername</a></p>
-    </section>
+header p {
+    font-size: 1.2rem;
+}
 
-    <footer>
-        <p>&copy; 2025 Sanjan. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #3a7bd5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Section styling */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #3a7bd5;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+section p, section li {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+/* Contact links */
+a {
+    color: #3a7bd5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #3a7bd5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
